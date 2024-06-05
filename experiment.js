@@ -935,7 +935,7 @@ var avoidance_key = "B";
       "faster to approach positive stimuli and to avoid negative stimuli (rather than the reverse). </p>" +
       "<p class='instructions'> Here, we wanted to see if this effect was larger for one visual environment " +
       "compared to the other. </p>" +
-      "<p class='instructions'>For more information to this topic, please send a message on Prolific </p>" +
+      "<p class='instructions'>For more information on this topic, please send a message on Prolific. </p>" +
       "<p class = 'continue-instructions'>Press <strong>space</strong> to continue.</p>",
     choices: [32]
   };
