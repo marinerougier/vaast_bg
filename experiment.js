@@ -423,7 +423,7 @@ var avoidance_key = "B";
 // attentional check logging ------------------------------------------------------------
   var saving_attention = function() {
     database
-     .ref("attention_info_VAAST_incidente/")
+     .ref("attention_info_fondVAAST/")
      .push()
      .set({session_id: session_id,
          prolific_id: prolific_id,
