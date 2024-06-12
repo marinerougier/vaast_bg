@@ -130,7 +130,7 @@ var avoidance_key = "B";
    }
 
   // prolific variables
-  var prolific_id = jsPsych.data.getURLVariable('prolific_id');
+  var prolific_id = jsPsych.data.getURLVariable('PROLIFIC_PID');
   if(prolific_id == null) {prolific_id = "999";}
 
   // counter variables
@@ -850,15 +850,6 @@ var avoidance_key = "B";
     choices: [32]
   };
 
-  var extra_information_1 = {
-    type: 'survey-multi-choice',
-    questions: [
-      {prompt: "Have you ever completed the previous task in the past?",
-       options: ["Yes", "No", "I cannot remember"], required: true, horizontal: true}
-      ],
-    button_label: "Submit"
-  };
-
   var extra_information_2 = {
     timeline: [{
       type: 'survey-text',
@@ -988,7 +979,6 @@ var avoidance_key = "B";
 
  // demographic questions
   timeline.push(extra_information,
-                //extra_information_1,
                 extra_information_2,
                 extra_information_3,
                 extra_information_4,
@@ -1024,7 +1014,7 @@ var avoidance_key = "B";
         },
       on_finish: function() {
           saving_browser_events(completion = true);
-          window.location.href = "https://app.prolific.ac/submissions/complete?cc=MEMHX5XQ";
+          window.location.href = "https://app.prolific.com/submissions/complete?cc=C3FXL022";
       }
     });
   }
